@@ -4,107 +4,31 @@
 		<meta charset="UTF-8" />
 		<title> Challenge 1 </title>
 		<link type="text/css" href="main.css" rel="stylesheet" />
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script type="text/javascript">
-      google.charts.load('current', {'packages':['gauge']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Label', 'Value'],
-          ['Memory', 80],
-          ['CPU', 55],
-          ['Network', 68]
-        ]);
-
-        var options = {
-          width: 400, height: 120,
-          redFrom: 90, redTo: 100,
-          yellowFrom:75, yellowTo: 90,
-          minorTicks: 5
-        };
-
-        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
-
-        chart.draw(data, options);
-
-        setInterval(function() {
-          data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
-          chart.draw(data, options);
-        }, 13000);
-        setInterval(function() {
-          data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
-          chart.draw(data, options);
-        }, 5000);
-        setInterval(function() {
-          data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
-          chart.draw(data, options);
-        }, 26000);
-      }
-    </script>
 	</head>
 	<body>
 		<div class="grid-container">
 
-			<div class="grid-item box 1">
+			<div class="grid-item box-1">
 				<img class="logo" src="img/logo.jpg">
 			</div>
 
-			<div class="grid-item box 2">
+			<div class="grid-item box-2">
 				<img class="flesje" src="img/flesjewater.png">
-				<section class=grid-container>
 				<div class="water"></div>
 				<!-- <div class="cup"></div> -->
 			</div>
 
-			<div class="grid-item box 4">
-				<meter id="meter" value=".5" max="0.7" max="0" high=".75" low=".25"></meter>
-    			<div id="chart_div" style="width: 400px; height: 120px;"></div>
-    			<script>
-    			  google.charts.load('current', {'packages':['gauge']});
-			      google.charts.setOnLoadCallback(drawChart);
+			<div class="grid-item box-3">
+				<!-- <meter id="meter" value=".5" max="0.7" max="0" high=".75" low=".25"></meter> -->
 
-			      function drawChart() {
-
-			        var data = google.visualization.arrayToDataTable([
-			          ['Label', 'Value'],
-			          ['Memory', 80],
-			          ['CPU', 55],
-			          ['Network', 68]
-			        ]);
-
-			        var options = {
-			          width: 400, height: 120,
-			          redFrom: 90, redTo: 100,
-			          yellowFrom:75, yellowTo: 90,
-			          minorTicks: 5
-			        };
-
-			        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
-
-			        chart.draw(data, options);
-
-			        setInterval(function() {
-			          data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
-			          chart.draw(data, options);
-			        }, 13000);
-			        setInterval(function() {
-			          data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
-			          chart.draw(data, options);
-			        }, 5000);
-			        setInterval(function() {
-			          data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
-			          chart.draw(data, options);
-			        }, 26000);
-			      }
-    			</script>
+				<div id="container"></div>
+				
 			</div>
 
 
 	<!-- Display the countdown timer in an element -->
 		
-			<div class="grid-item box 4">
+			<div class="grid-item box-4">
 				<p id="demo"> </p>
 				<p id="time"> </p>
 				<script>
@@ -144,5 +68,7 @@
 
 		</div>
 
+		<script src="scripts/progressbar.min.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>

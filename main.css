@@ -16,40 +16,66 @@ body {
 
 /* HEADER BOX1 */
 
+.box-1 {
+	background-color: red;
+}
+
 /* WATER BOX2 */
 
-.flesje {
+.box-2 {
+	background-color: blue;
+	position: relative;
+}
+
+.flesje{
   width: 100px;
   height: auto;
-  position: absolute;
   top: 50%;
   left: 20%;
+  z-index: 1;
 }
 
 .water {
 	height: 50px;
   	width: 50px;
   	background-color: #ffe01a;
-  	position: absolute;
-  	top: 68%;
+  	top: 0;
+  	left: 0;
   	border-bottom-right-radius: 37%;
   	border-bottom-left-radius: 37%;
   	opacity: 0.5;
-  	left: 22.7%;
+  	z-index: 2;
 }
+
 
 /* METER BOX3 */
 
-#meter {
+.box-3 {
+	background-color: white;
+}
+
+/*#meter {
   margin: 0 auto 4.5em;
   width: 350px;
   height: 40px;
   display: block;
   top: 50%;
   left: 70%;
+}*/
+
+#container {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
 }
 
+
+
 /* COUNTDOWN BOX4 */
+
+.box-4 {
+	background-color: green;
+}
 
 @font-face {
   font-family: Space_Mono;

@@ -1,36 +1,18 @@
-google.charts.load('current', {'packages':['gauge']});
-			      google.charts.setOnLoadCallback(drawChart);
 
-			      function drawChart() {
+var bar = new ProgressBar.Line(container, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 14000,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  }
+});
 
-			        var data = google.visualization.arrayToDataTable([
-			          ['Label', 'Value'],
-			          ['Memory', 80],
-			          ['CPU', 55],
-			          ['Network', 68]
-			        ]);
-
-			        var options = {
-			          width: 400, height: 120,
-			          redFrom: 90, redTo: 100,
-			          yellowFrom:75, yellowTo: 90,
-			          minorTicks: 5
-			        };
-
-			        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
-
-			        chart.draw(data, options);
-
-			        setInterval(function() {
-			          data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
-			          chart.draw(data, options);
-			        }, 13000);
-			        setInterval(function() {
-			          data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
-			          chart.draw(data, options);
-			        }, 5000);
-			        setInterval(function() {
-			          data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
-			          chart.draw(data, options);
-			        }, 26000);
-			      }
+bar.set(1);
+bar.animate(0);  // Number from 0.0 to 1.0
