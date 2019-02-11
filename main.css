@@ -4,6 +4,20 @@
 	/*grid-gap: 10px 10px;*/
 }
 
+body {
+  background-color: black; 
+  color: #ffe01a;
+  font-family: Space_Mono;
+  font-size: 70px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER BOX1 */
+
+/* WATER BOX2 */
+
 .flesje {
   width: 100px;
   height: auto;
@@ -12,9 +26,41 @@
   left: 20%;
 }
 
+.water {
+	height: 50px;
+  	width: 50px;
+  	background-color: #ffe01a;
+  	position: absolute;
+  	top: 68%;
+  	border-bottom-right-radius: 37%;
+  	border-bottom-left-radius: 37%;
+  	opacity: 0.5;
+  	left: 22.7%;
+}
+
+/* METER BOX3 */
+
+#meter {
+  margin: 0 auto 4.5em;
+  width: 350px;
+  height: 40px;
+  display: block;
+  top: 50%;
+  left: 70%;
+}
+
+/* COUNTDOWN BOX4 */
+
 @font-face {
   font-family: Space_Mono;
   src: url(SpaceMono-Regular.ttf);
+}
+
+.demo {
+	top: 80%;
+	left: 50%;
+	font-family: Arial;
+	color: red;
 }
 
 /*DOEN HET NIET?*/
@@ -26,44 +72,6 @@
 .time {
 	font-family: Space_Mono;
 }*/
-
-body {
-  background-color: black; 
-  color: #ccff00;
-  font-family: Space_Mono;
-  font-size: 70px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.water {
-	height: 50px;
-  	width: 50px;
-  	background-color: #33D7FF;
-  	position: absolute;
-  	top: 68%;
-  	border-bottom-right-radius: 37%;
-  	border-bottom-left-radius: 37%;
-  	opacity: 0.5;
-  	left: 22.7%;
-}
-
-#meter {
-  margin: 0 auto 4.5em;
-  width: 350px;
-  height: 40px;
-  display: block;
-  top: 50%;
-  left: 70%;
-}
-
-.demo {
-	top: 80%;
-	left: 50%;
-	font-family: Arial;
-	color: red;
-}
 
 /* IPAD SIZE */
 @media only screen and (min-width: 768px) {
@@ -102,5 +110,6 @@ body {
 	top: 30px;
 	border-top-right-radius: 35%;
 	border-top-right-radius: 35%;
-}*/
+}
 
+*/
