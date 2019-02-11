@@ -1,3 +1,9 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	/*grid-gap: 10px 10px;*/
+}
+
 .flesje {
   width: 100px;
   height: auto;
@@ -57,6 +63,16 @@ body {
 	left: 50%;
 	font-family: Arial;
 	color: red;
+}
+
+/* IPAD SIZE */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1024px) {
+
 }
 
 /*.cup {
