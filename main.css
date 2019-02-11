@@ -1,0 +1,90 @@
+.flesje {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+@font-face {
+  font-family: Space_Mono;
+  src: url(SpaceMono-Regular.ttf);
+}
+
+/*DOEN HET NIET?*/
+
+/*.demo {
+	font-family: Arial;
+}
+
+.time {
+	font-family: Space_Mono;
+}*/
+
+body {
+  background-color: black; 
+  color: #ccff00;
+  font-family: Space_Mono;
+  font-size: 70px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.water {
+	height: 50px;
+  	width: 50px;
+  	background-color: #33D7FF;
+  	position: absolute;
+  	top: 68%;
+  	border-bottom-right-radius: 37%;
+  	border-bottom-left-radius: 37%;
+  	opacity: 0.5;
+  	left: 22.7%;
+}
+
+#meter {
+  margin: 0 auto 4.5em;
+  width: 350px;
+  height: 40px;
+  display: block;
+  top: 50%;
+  left: 70%;
+}
+
+.demo {
+	top: 80%;
+	left: 50%;
+	font-family: Arial;
+	color: red;
+}
+
+/*.cup {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 10%;
+	height: 13%;
+	border: 6px solid #fff;
+	border-top: 20x solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(water.png);
+	background-repeat: repeat-x;
+	animation: animate 10% linear infinite;
+}
+
+.cup:before {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 80%;
+	border: 6% solid #fff;
+	right: -62%;
+	top: 30px;
+	border-top-right-radius: 35%;
+	border-top-right-radius: 35%;
+}*/
+
