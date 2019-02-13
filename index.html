@@ -9,28 +9,15 @@
 		<div class="grid-container">
 
 			<div class="grid-item box-1">
-				<img class="logo" src="img/logo.jpg">
+				<img class="logo" src="img/ITS.png">
+				<h1> REIS NAAR MARS </h1>
 			</div>
 
 			<div class="grid-item box-2">
-				<img class="flesje" src="img/flesjewater.png">
-				<div class="water"></div>
-				<!-- <div class="cup"></div> -->
-			</div>
 
-			<div class="grid-item box-3">
-				<!-- <meter id="meter" value=".5" max="0.7" max="0" high=".75" low=".25"></meter> -->
-
-				<div id="container"></div>
-				
-			</div>
-
-
-	<!-- Display the countdown timer in an element -->
-		
-			<div class="grid-item box-4">
 				<p id="demo"> </p>
 				<p id="time"> </p>
+				<p id="day"> </p>
 				<script>
 					// Set the date we're counting down to
 					var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
@@ -52,7 +39,7 @@
 
 					  // Display the result in the element with id="demo"
 					 
-					  document.getElementById("demo").innerHTML = days + " DAYS "
+					  document.getElementById("day").innerHTML = days + " DAYS "
 			
 
 					  document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds ;
@@ -64,6 +51,23 @@
 					  }
 					}, 1000);
 				</script>
+			</div>
+
+
+	<!-- Display the countdown timer in an element -->
+		
+			<div class="grid-item box-3">
+
+				<img class="flesje" src="img/flesjewater.png">
+				<div class="water"></div>
+				<!-- <div class="cup"></div> -->
+			</div>
+
+				<div class="grid-item box-4">
+				<!-- <meter id="meter" value=".5" max="0.7" max="0" high=".75" low=".25"></meter> -->
+
+				<div id="container"></div>
+				
 			</div>
 
 		</div>

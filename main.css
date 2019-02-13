@@ -4,89 +4,105 @@
 	/*grid-gap: 10px 10px;*/
 }
 
+/*@font-face {
+  font-family: Space_Mono;
+  src: url(font/SpaceMono-Regular.ttf);
+}*/
+
+@font-face {
+  font-family: Staatliches-Regular;
+  src: url(font/Staatliches-Regular.ttf);
+}
+
+@font-face {
+  font-family: digital;
+  src: url(font/digital-7.ttf);
+}
+
 body {
   background-color: black; 
-  color: #ffe01a;
-  font-family: Space_Mono;
-  font-size: 70px;
   text-align: center;
   margin: 0;
   padding: 0;
+  color: #ffe01a;
+  font-family: digital;
+  font-size: 100px;
 }
 
 /* HEADER BOX1 */
 
 .box-1 {
-	background-color: red;
+	color: white;
+	font-family: arial;
+	font-size: 30px;
+	height: 500px;
 }
 
-/* WATER BOX2 */
+h1 {
+	margin-top: -10px;
+}
+
+.logo {
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+/* COUNTDOWN BOX2 */
+
 
 .box-2 {
-	background-color: blue;
+	/*background-color: blue;*/
 	position: relative;
 }
 
+.day {
+	color: #ffe01a;
+  	font-family: Arial;
+  	font-size: 70px;
+}
+
+
+/* WATER BOX3 */
+
+.box-3 {
+	/*background-color: yellow;*/
+	height: 700px;
+}
+
 .flesje{
-  width: 100px;
+  width: 200px;
   height: auto;
-  top: 50%;
-  left: 20%;
   z-index: 1;
+  margin-top: 120px;
 }
 
 .water {
-	height: 50px;
-  	width: 50px;
-  	background-color: #ffe01a;
-  	top: 0;
-  	left: 0;
-  	border-bottom-right-radius: 37%;
-  	border-bottom-left-radius: 37%;
-  	opacity: 0.5;
-  	z-index: 2;
+    height: 124px;
+    width: 103px;
+    background-color: #ffe01a;
+    top: 50%;
+    margin-left: 421px;
+    margin-top: -146px;
+    /* left: 30px; */
+    border-bottom-right-radius: 37%;
+    border-bottom-left-radius: 37%;
+    opacity: 0.5;
+    z-index: 2;
 }
 
+/* METER BOX4 */
 
-/* METER BOX3 */
-
-.box-3 {
-	background-color: white;
+.box-4 {
+	/*background-color: green;*/
+	height: 500px;
 }
-
-/*#meter {
-  margin: 0 auto 4.5em;
-  width: 350px;
-  height: 40px;
-  display: block;
-  top: 50%;
-  left: 70%;
-}*/
 
 #container {
   margin: 20px;
   width: 400px;
-  height: 8px;
-}
-
-
-
-/* COUNTDOWN BOX4 */
-
-.box-4 {
-	background-color: green;
-}
-
-@font-face {
-  font-family: Space_Mono;
-  src: url(SpaceMono-Regular.ttf);
-}
-
-.demo {
-	top: 80%;
-	left: 50%;
-	font-family: Arial;
-	color: red;
+  height: 25px;
+  left: 50%;
+  margin-left: 25%;
 }
 
 /*DOEN HET NIET?*/
@@ -102,40 +118,15 @@ body {
 /* IPAD SIZE */
 @media only screen and (min-width: 768px) {
 
+/*	.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;*/
+	/*grid-gap: 10px 10px;*/
+}
+
 }
 
 /* DESKTOP SIZE */
 @media only screen and (min-width: 1024px) {
 
 }
-
-/*.cup {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 10%;
-	height: 13%;
-	border: 6px solid #fff;
-	border-top: 20x solid transparent;
-	border-radius: 15px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background: url(water.png);
-	background-repeat: repeat-x;
-	animation: animate 10% linear infinite;
-}
-
-.cup:before {
-	content: '';
-	position: absolute;
-	width: 50%;
-	height: 80%;
-	border: 6% solid #fff;
-	right: -62%;
-	top: 30px;
-	border-top-right-radius: 35%;
-	border-top-right-radius: 35%;
-}
-
-*/
