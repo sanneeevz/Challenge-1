@@ -1,7 +1,12 @@
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr;
-	/*grid-gap: 10px 10px;*/
+	
+	grid-template-areas:
+		"header"
+		"countdown"
+		"water"
+		"meter";
 }
 
 /*@font-face {
@@ -32,6 +37,7 @@ body {
 /* HEADER BOX1 */
 
 .box-1 {
+	grid-area: header;
 	color: white;
 	font-family: arial;
 	font-size: 30px;
@@ -53,6 +59,7 @@ h1 {
 .box-2 {
 	/*background-color: blue;*/
 	position: relative;
+	grid-area: countdown;
 }
 
 .day {
@@ -67,6 +74,7 @@ h1 {
 .box-3 {
 	/*background-color: yellow;*/
 	height: 700px;
+	grid-area: water;
 }
 
 .flesje{
@@ -95,6 +103,7 @@ h1 {
 .box-4 {
 	/*background-color: green;*/
 	height: 500px;
+	grid-area: meter;
 }
 
 #container {
@@ -118,15 +127,21 @@ h1 {
 /* IPAD SIZE */
 @media only screen and (min-width: 768px) {
 
-/*	.grid-container{
-	display: grid;
-	grid-template-columns: 1fr 1fr;*/
-	/*grid-gap: 10px 10px;*/
+#container {
+	left: 70%;
 }
 
 }
 
 /* DESKTOP SIZE */
 @media only screen and (min-width: 1024px) {
+
+	.grid-container{
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas:
+				"header header"
+				"countdown water"
+				"meter meter";
 
 }
