@@ -15,13 +15,18 @@
 }*/
 
 @font-face {
-  font-family: Staatliches-Regular;
-  src: url(font/Staatliches-Regular.ttf);
-}
-
-@font-face {
   font-family: digital;
   src: url(font/digital-7.ttf);
+}
+
+.day {
+	color: red;
+  	font-family: Arial;
+  	font-size: 70px;
+}
+
+script {
+	color: red;
 }
 
 body {
@@ -30,8 +35,8 @@ body {
   margin: 0;
   padding: 0;
   color: #ffe01a;
-  font-family: digital;
-  font-size: 100px;
+  font-family: Arial;
+  font-size: 50px;
 }
 
 /* HEADER BOX1 */
@@ -41,20 +46,25 @@ body {
 	color: white;
 	font-family: arial;
 	font-size: 30px;
-	height: 500px;
+	height: 300px;
 }
 
 h1 {
 	margin-top: -10px;
+	font-size: 40px
 }
 
 .logo {
 	margin-top: 50px;
 	margin-bottom: 0px;
+	width: 300px
 }
 
 /* COUNTDOWN BOX2 */
 
+h2 {
+	font-size: 30px;
+}
 
 .box-2 {
 	/*background-color: blue;*/
@@ -62,11 +72,11 @@ h1 {
 	grid-area: countdown;
 }
 
-.day {
+/*.day {
 	color: #ffe01a;
   	font-family: Arial;
   	font-size: 70px;
-}
+}*/
 
 
 /* WATER BOX3 */
@@ -78,19 +88,19 @@ h1 {
 }
 
 .flesje{
-  width: 200px;
+  width: 150px;
   height: auto;
   z-index: 1;
   margin-top: 120px;
 }
 
 .water {
-    height: 124px;
-    width: 103px;
+    height: 104px;
+    width: 80px;
     background-color: #ffe01a;
     top: 50%;
-    margin-left: 421px;
-    margin-top: -146px;
+    margin-left: 230px;
+    margin-top: -158px;
     /* left: 30px; */
     border-bottom-right-radius: 37%;
     border-bottom-left-radius: 37%;
@@ -127,9 +137,38 @@ h1 {
 /* IPAD SIZE */
 @media only screen and (min-width: 768px) {
 
-#container {
-	left: 70%;
-}
+	.box-1 {
+		height: 400px;
+	}
+
+	h1 {
+	margin-top: -10px;
+	font-size: 50px
+	}
+
+	.logo {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	width: 400px
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+	body {
+		font-size: 100px;
+	}
+
+	.flesje {
+		width: 200px;
+	}
+
+	.water {
+		height: 124px;
+    	width: 103px;
+	}
+
 
 }
 
@@ -143,5 +182,25 @@ h1 {
 				"header header"
 				"countdown water"
 				"meter meter";
+	}
+
+	.box-1 {
+		height: 500px;
+	}
+
+	#container {
+		left: 90%;
+
+		}
+
+	.logo {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	width: 500px
+	}
+
+	h1 {
+		font-size: 60px;
+	}
 
 }
