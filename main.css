@@ -19,17 +19,7 @@
   src: url(font/digital-7.ttf);
 }
 
-#time {
-	color: #ffe01a;
-	font-size: 50px;
-	font-family: Space_Mono;
-}
 
-#day {
-	color: #ffe01a;
-  	font-family: Arial;
-  	font-size: 50px;
-}
 
 script {
 	color: red;
@@ -38,11 +28,12 @@ script {
 body {
   background-color: black; 
   text-align: center;
-  margin: 0;
+  margin: 2;
   padding: 0;
   color: white;
-  font-family: Arial;
-  font-size: 50px;
+  font-family: Impact;
+  font-style: oblique;
+  font-size: 100px;
 }
 
 /* HEADER BOX1 */
@@ -52,12 +43,13 @@ body {
 	color: white;
 	font-family: arial;
 	font-size: 30px;
-	height: 300px;
+	height: 350px;
 }
 
 h1 {
 	margin-top: -10px;
-	font-size: 40px
+	font-size: 40px;
+	font-family: Impact;
 }
 
 .logo {
@@ -76,6 +68,22 @@ h2 {
 	/*background-color: blue;*/
 	position: relative;
 	grid-area: countdown;
+	background-color: #00FF00;
+	margin: 5px;
+	height: 350px;
+}
+
+#time {
+	color: black;
+	font-size: 60px;
+	font-family: digital;
+}
+
+#day {
+	color: black;
+  	font-family: Arial Black;
+  	font-size: 50px;
+  	margin-top: -70px;
 }
 
 /*.day {
@@ -89,8 +97,12 @@ h2 {
 
 .box-3 {
 	/*background-color: yellow;*/
-	height: 600px;
+	height: 400px;
 	grid-area: water;
+	margin: 5px;
+	background-color: #FFFF00;
+	z-index: 0;
+	color: black;
 }
 
 .water-holder {
@@ -103,7 +115,7 @@ h2 {
   width: 150px;
   height: auto;
   z-index: 1;
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 .water {
@@ -111,7 +123,7 @@ h2 {
     height: 104px;
     width: 80px;
     background-color: #ffe01a;
-    top: 70%;
+    top: 61%;
     left: 230px;
 /*    margin-left: 230px;
     margin-top: -158px;*/
@@ -126,8 +138,10 @@ h2 {
 
 .box-4 {
 	/*background-color: green;*/
-	height: 500px;
+	height: 250px;
 	grid-area: meter;
+	background-color: #FF0033;
+	margin: 5px;
 }
 
 #container {
@@ -149,7 +163,7 @@ h2 {
 @media only screen and (min-width: 768px) {
 
 	.box-1 {
-		height: 400px;
+		height: 500px;
 	}
 
 	h1 {
@@ -171,20 +185,22 @@ h2 {
 		font-size: 100px;
 	}
 
+	.box-2 {
+		height: 400px;
+	}
+
 	#time {
-	color: #ffe01a;
 	font-size: 60px;
 	font-family: Space_Mono;
 	}
 
 	#day {
-		color: #ffe01a;
-	  	font-family: Arial;
+	  	font-family: Arial Black;
 	  	font-size: 60px;
 	}
 
 	.box-3 {
-		height: 700px;
+		height: 600px;
 	}
 
 	.flesje {
@@ -198,7 +214,11 @@ h2 {
 	.water {
 		height: 124px;
     	width: 103px;
-    	left: 33px;
+    	left: 30px;
+	}
+
+	.box-4 {
+		height: 350px;
 	}
 
 
@@ -220,19 +240,43 @@ h2 {
 		height: 500px;
 	}
 
+	.box-2 {
+		height: auto;
+	}
+
+	.box-3 {
+		height: 600px;
+	}
+
+	.flesje {
+		margin-top: 5px;
+		width: 200px;
+	}
+
+	.water-holder {
+		width: 200px;
+	}
+
+	.water {
+		height: 124px;
+    	width: 103px;
+    	left: 32px;
+    	top: 241px;
+	}
+
 	#container {
 		left: 90%;
 
 		}
 
 	.logo {
-	margin-top: 50px;
-	margin-bottom: 0px;
-	width: 500px
+		margin-top: 0px;
+		margin-bottom: 0px;
+		width: 500px
 	}
 
 	h1 {
-		font-size: 60px;
+		font-size: 70px;
 	}
 
 }
