@@ -9,25 +9,26 @@
 		"meter";
 }
 
-/*@font-face {
+@font-face {
   font-family: Space_Mono;
   src: url(font/SpaceMono-Regular.ttf);
-}*/
+}
 
 @font-face {
   font-family: digital;
   src: url(font/digital-7.ttf);
 }
 
-#day {
-	color: red;
-  	font-family: Arial;
-  	font-size: 70px;
+#time {
+	color: #ffe01a;
+	font-size: 50px;
+	font-family: Space_Mono;
 }
 
-#time {
-	color: blue;
-	font-size: 70px;
+#day {
+	color: #ffe01a;
+  	font-family: Arial;
+  	font-size: 50px;
 }
 
 script {
@@ -39,7 +40,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #ffe01a;
+  color: white;
   font-family: Arial;
   font-size: 50px;
 }
@@ -88,12 +89,14 @@ h2 {
 
 .box-3 {
 	/*background-color: yellow;*/
-	height: 700px;
+	height: 600px;
 	grid-area: water;
 }
 
 .water-holder {
+	width: 150px;
 	position: relative;
+	margin: 0 auto;
 }
 
 .flesje{
@@ -128,11 +131,8 @@ h2 {
 }
 
 #container {
-  margin: 20px;
-  width: 400px;
-  height: 25px;
-  left: 50%;
-  margin-left: 25%;
+    width: 64%;
+    margin: 0 auto;
 }
 
 /*DOEN HET NIET?*/
@@ -171,13 +171,34 @@ h2 {
 		font-size: 100px;
 	}
 
+	#time {
+	color: #ffe01a;
+	font-size: 60px;
+	font-family: Space_Mono;
+	}
+
+	#day {
+		color: #ffe01a;
+	  	font-family: Arial;
+	  	font-size: 60px;
+	}
+
+	.box-3 {
+		height: 700px;
+	}
+
 	.flesje {
+		width: 200px;
+	}
+
+	.water-holder {
 		width: 200px;
 	}
 
 	.water {
 		height: 124px;
     	width: 103px;
+    	left: 33px;
 	}
 
 
