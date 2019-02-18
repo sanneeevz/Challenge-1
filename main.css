@@ -19,10 +19,15 @@
   src: url(font/digital-7.ttf);
 }
 
-.day {
+#day {
 	color: red;
   	font-family: Arial;
   	font-size: 70px;
+}
+
+#time {
+	color: blue;
+	font-size: 70px;
 }
 
 script {
@@ -87,6 +92,10 @@ h2 {
 	grid-area: water;
 }
 
+.water-holder {
+	position: relative;
+}
+
 .flesje{
   width: 150px;
   height: auto;
@@ -95,12 +104,14 @@ h2 {
 }
 
 .water {
+	position: absolute;
     height: 104px;
     width: 80px;
     background-color: #ffe01a;
-    top: 50%;
-    margin-left: 230px;
-    margin-top: -158px;
+    top: 70%;
+    left: 230px;
+/*    margin-left: 230px;
+    margin-top: -158px;*/
     /* left: 30px; */
     border-bottom-right-radius: 37%;
     border-bottom-left-radius: 37%;
