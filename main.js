@@ -5,7 +5,7 @@ var bar = new ProgressBar.Line(container, {
   duration: 14000,
   color: '#FFEA82',
   trailColor: '#eee',
-  trailWidth: 2,
+  trailWidth: 1,
   svgStyle: {width: '100%', height: '100%'},
   from: {color: '#FC9303'},
   to: {color: '#7CE319'},
